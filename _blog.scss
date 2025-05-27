@@ -1,0 +1,178 @@
+.blog{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.banner-blog{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+
+.blog-card-latest{
+    flex: 1;
+    margin-top: 207px;
+    margin-bottom: 207px;
+    
+    .blog-text {
+        max-width: 636px;
+        flex-wrap: wrap;
+    }
+    
+}
+
+.blog-card{
+    width: 416px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.blog-searchbar{
+    width: 416px;
+    border: 1px solid #4B4B4B;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    
+    svg{
+        margin: 16px 10px 16px 16px;
+    }
+
+    input{
+        border: none;
+        font-size: 16px;
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+
+}
+
+.content{
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap;
+}
+
+.blog-card img{
+    margin-bottom: 16px;
+}
+
+time{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.blog-tag{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    a{
+        font-size: 24px;
+        color: #0027D5;
+    }
+}
+
+
+.blog-title{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.blog-text{
+    color: #4b4b4b;
+    
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    margin-bottom: 16px;
+}
+
+
+.blog-link{
+    display: block;
+    color: #4b4b4b;
+
+    width: 96px;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    border-radius: 40px;
+    white-space: nowrap;
+
+}
+
+.blog-link:hover{
+    color: #fff;
+    background-color: #4b4b4b;
+
+}
+
+.blog-tag .blog-tag-pop{
+    font-weight: 700;
+    color: #fff;
+
+    width: 88px;
+    padding: 6px 12px;
+    margin-left: 8px;
+    border-radius: 40px;
+    background-color: #0027D5;
+    white-space: nowrap;
+}
+
+
+.blog-pagination{
+    width: 328px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 40px;
+    margin-bottom: 80px;
+
+    a{
+        display: block;
+        color: #4B4B4B;
+    }
+
+    .active a{
+        color: #0027D5;
+    }
+
+    li a:hover{
+        transform: scale(1.2);
+        }
+
+    li a:active{
+        color: #0027D5;
+    }
+
+    li{
+        width: 40px;
+    }
+
+}
+
+.footer-contactBar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .footer-mail{
+        font-size: 32px;
+    }
+
+    .contactBar{
+        display: flex;
+    }
+}
