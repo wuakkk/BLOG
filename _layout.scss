@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
 body{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-}
-
-a{
-    text-decoration: none;
-}
-
-body{
     font-family: "Noto Sans TC";
     max-width: 1920px;
     margin: 0 auto;
     background-color: #FBFBFB;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
 }
