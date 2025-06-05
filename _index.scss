@@ -40,7 +40,7 @@
 
 }
 
-.banner-profile h2{
+.banner-profile h1{
     font-size: 120px;
     font-weight: 900;
 }
@@ -57,14 +57,16 @@
     padding: 80px 0;
 }
 
+
 .banner-content{
     font-size: 28px;
     color: #000;
     background-color: #fff;
 
-    max-width: 1077px;
+    width: 56%;
     padding: 80px 40px;
-    margin-left: 763px;
+    margin-left: auto;
+    margin-right: 80px;
     margin-top: -160px;
 
     position: relative;
@@ -81,23 +83,26 @@
     gap: 4px;
 }
 
-@media (max-width:1840px) {
-    .banner-content {
-        width: 100vw;
-        padding: 40px 24px;
-        margin: 0 auto;
-        font-size: 24px;
-        flex-wrap: wrap;
-    }
+@media (max-width:1540px) {
 
-    .banner-profile h2{
-        font-size: 52px;
+    .banner-profile h1{
+        font-size: 80px;
         font-weight: 900;
     }
 
     .banner-profile p{
         font-size: 28px;
         font-weight: 700;
+    }
+}
+
+@media (max-width:1200px) {
+    .banner-content {
+        width: 100vw;
+        padding: 40px 24px;
+        margin: 0 auto;
+        font-size: 24px;
+        flex-wrap: wrap;
     }
 }
 
@@ -115,13 +120,13 @@
         padding: 24px 37px 200px 24px;
     }
 
-    .banner-profile-text {
-        text-align: center;
-    }
-
     .banner-content{
         margin-top: -160px;
 
+    }
+
+    .banner-profile h1{
+        font-size: 52px;
     }
 
     .main3{
@@ -146,17 +151,16 @@
 }
 
 .main1-content{
-    margin: 24px 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
     padding: 0 110px;
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
 }
 
 .main1-card{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding: 32px 0;
 }
 
 .main1-card img{
@@ -196,9 +200,8 @@
 }
 
 .main1-link{
-    display: flex;
-    justify-content: flex-end;
     margin-top: 33px;
+    text-align: end;
 }
 
 .main1-link a{
@@ -206,9 +209,10 @@
     font-size: 28px;
     font-weight: 700;
     color: #000;
-    display: flex;
-    gap: 8px;
 
+    i {
+        font-size: 40px;
+    }
 }
 
 .main1-link a:hover{
@@ -216,9 +220,6 @@
 }
 
 @media (max-width:1296px) {
-    .main-title{
-        padding-left: 12px;
-    }
 
     .main1{
         max-width: 100vw;
@@ -228,22 +229,20 @@
 
     .main1-content {
         width: 100%;
-        padding: 0 12px;
+        padding: 0;
         gap: 32px;
     }
 
-    
 }
 
 @media (max-width: 767px) {
     .main1{
         width: 100vw;
-        padding: 0;
+        padding: 64px 12px;
     }
 
     .main-title{
         font-size: 48px;
-        padding-left: 12px;
     }
 
     .main1-card-para {
@@ -255,6 +254,12 @@
 
     .main1-card-para-reverse {
         margin-right: 0;
+    }
+
+    .main1-link {
+        padding-left: 43px;
+        flex-wrap: wrap;
+
     }
 }
 
@@ -275,14 +280,29 @@
     gap: 24px;
 }
 
-.arrow-btn:hover svg{
+.arrow-btn {
+    font-size: 44px;
+
+    .bi-arrow-left-circle-fill {
+        color: #B2BEF2;
+    }
+
+    .bi-arrow-right-circle-fill {
+        color: #0027D5;
+    }
+}
+
+.arrow-btn:hover {
     transform: scale(0.9);
 }
+
+
 
 @media (max-width: 1432px){
     .main2{
         max-width: 100vw;
         margin: 0 auto;
+        padding: 64px 12px;
     }
 
     .main2-content {
@@ -305,10 +325,7 @@
 
 @media (max-width:767px) {
     .main2 .main-title{
-        padding-left: 12px;
-    }
-    .main2-content {
-        width: 100vw;
+        padding-left: 0;
     }
     .blog-card {
         width: 90%;
@@ -318,6 +335,9 @@
     }
 }
 
+.main-title-box {
+    display: flex;
+}
 
 .main3-content{
     margin-top: 24px;
@@ -461,6 +481,7 @@
 }
 
 @media (max-width:1296px) {
+
     .main3-content-card-wrap {
         margin: 0;
         justify-content: center;
@@ -483,6 +504,10 @@
 }
 
 @media (max-width:767px) {
+    .main-title-box {
+        flex-direction: column;
+    }
+    
     .main3-podcast-card {
         width: 98%;
     }
@@ -490,8 +515,7 @@
     .main3-podcast-card-wrap {
         margin-left: 12px;
         margin-right: 12px;
-    }
-    
+    }  
 }
 
 

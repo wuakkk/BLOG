@@ -23,9 +23,14 @@
 }
 
 @media (max-width:767px) {
+    .banner-profile-blog {
+        padding: 24px 37px 24px 24px;
+    }
+
     .banner-blog{
         padding-left: 12px;
         padding-right: 12px;
+        margin-bottom: 48px;
 
         img {
             width: 100%;
@@ -33,6 +38,7 @@
     }
 
     .blog-card-latest {
+
         .blog-text {
             max-width: 100%;
         }
@@ -158,13 +164,17 @@ time{
 }
 
 @media (max-width:767px) {
+    .blog-wrap {
+        padding-top: 64px;
+    }
+
+    .content{
+        padding-top: 40px;
+    }
+
     .blog-searchbar {
         margin-left: 12px;
         margin-right: 12px;
-    }
-
-    .content {
-        padding-top: 40px;
     }
 
     .blog-card {
